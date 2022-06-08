@@ -72,7 +72,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabPrincipal);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Sistema";
             this.tabPrincipal.ResumeLayout(false);
             this.tabPageAtivos.ResumeLayout(false);
             this.ResumeLayout(false);

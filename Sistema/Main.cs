@@ -27,12 +27,6 @@ namespace Sistema
                 {
                     MessageBox.Show(ex.Message);
                 }
-
-                contexto.Add(new Pessoa
-                {
-                    Nome = "Douglas"
-                });
-                contexto.SaveChanges();
             }
         }
 
