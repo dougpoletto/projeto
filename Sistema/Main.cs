@@ -38,7 +38,7 @@ namespace Sistema
 
         private void tabPrincipal_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (tabPrincipal.SelectedIndex == 0)
+            if (tabPrincipal.SelectedTab == tabPageAtivos)
             {
                 buttonTeste.Text = "Ativo";
             }

@@ -31,14 +31,13 @@
             this.tabPrincipal = new System.Windows.Forms.TabControl();
             this.tabPageAtivos = new System.Windows.Forms.TabPage();
             this.buttonTeste = new System.Windows.Forms.Button();
-            this.tabPageInativos = new System.Windows.Forms.TabPage();
             this.tabPrincipal.SuspendLayout();
+            this.tabPageAtivos.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPrincipal
             // 
             this.tabPrincipal.Controls.Add(this.tabPageAtivos);
-            this.tabPrincipal.Controls.Add(this.tabPageInativos);
             this.tabPrincipal.Location = new System.Drawing.Point(8, 8);
             this.tabPrincipal.Name = "tabPrincipal";
             this.tabPrincipal.SelectedIndex = 0;
@@ -48,6 +47,7 @@
             // 
             // tabPageAtivos
             // 
+            this.tabPageAtivos.Controls.Add(this.buttonTeste);
             this.tabPageAtivos.Location = new System.Drawing.Point(4, 24);
             this.tabPageAtivos.Name = "tabPageAtivos";
             this.tabPageAtivos.Padding = new System.Windows.Forms.Padding(3);
@@ -58,33 +58,23 @@
             // 
             // buttonTeste
             // 
-            this.buttonTeste.Location = new System.Drawing.Point(248, 320);
+            this.buttonTeste.Location = new System.Drawing.Point(138, 179);
             this.buttonTeste.Name = "buttonTeste";
             this.buttonTeste.Size = new System.Drawing.Size(75, 23);
             this.buttonTeste.TabIndex = 0;
-            this.buttonTeste.Text = "Botão";
+            this.buttonTeste.Text = "Ativo";
             this.buttonTeste.UseVisualStyleBackColor = true;
-            // 
-            // tabPageInativos
-            // 
-            this.tabPageInativos.Location = new System.Drawing.Point(4, 24);
-            this.tabPageInativos.Name = "tabPageInativos";
-            this.tabPageInativos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageInativos.Size = new System.Drawing.Size(778, 278);
-            this.tabPageInativos.TabIndex = 1;
-            this.tabPageInativos.Text = "Inativos";
-            this.tabPageInativos.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonTeste);
             this.Controls.Add(this.tabPrincipal);
             this.Name = "Main";
             this.Text = "Form1";
             this.tabPrincipal.ResumeLayout(false);
+            this.tabPageAtivos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -93,7 +83,6 @@
 
         private TabControl tabPrincipal;
         private TabPage tabPageAtivos;
-        private TabPage tabPageInativos;
         private Button buttonTeste;
     }
 }
